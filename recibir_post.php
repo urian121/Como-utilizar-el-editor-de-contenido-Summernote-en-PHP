@@ -1,8 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include './config/config.php';
-    ini_set('display_errors', 1);
-    error_reporting(E_ALL);
 
     $autor = $_POST['autor'];
     $title = $_POST['title'];

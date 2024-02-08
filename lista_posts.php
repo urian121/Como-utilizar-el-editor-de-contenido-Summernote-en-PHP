@@ -21,9 +21,6 @@
                 </h1>
             </div>
             <?php
-            ini_set('display_errors', 1);
-            error_reporting(E_ALL);
-
             include 'config/config.php';
             $query = "SELECT * FROM tbl_posts ORDER BY id DESC;";
             $result = mysqli_query($con, $query);
